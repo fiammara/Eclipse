@@ -10,7 +10,6 @@ public class Factory extends BaseShapeFactoryTest implements ShapeFactory{
 		
 	}
 	
-
 	@Override
 	public Shape createCircle(double radius) {
 		Shape circle=new Circle(radius);
@@ -27,8 +26,6 @@ public class Factory extends BaseShapeFactoryTest implements ShapeFactory{
 	@Override
 	protected ShapeFactory createShapeFactory() {
 		ShapeFactory shapes=new Factory ();
-		return shapes;
-					
-	}
-	
+		return shapes;					
+	}	
 }
