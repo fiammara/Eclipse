@@ -4,16 +4,12 @@ import com.eisgroup.javaexam.shapes.Shape;
 import com.eisgroup.javaexam.shapes.ShapeFactory;
 import com.eisgroup.javaexam.shapes.tests.BaseShapeFactoryTest;
 
-public class Factory extends BaseShapeFactoryTest implements Shape, ShapeFactory{
+public class Factory extends BaseShapeFactoryTest implements ShapeFactory{
 	
 	public Factory(){
 		
 	}
-	@Override
-	public double getArea() {
-		// TODO Auto-generated method stub
-		return this.getArea();
-	}
+	
 
 	@Override
 	public Shape createCircle(double radius) {
